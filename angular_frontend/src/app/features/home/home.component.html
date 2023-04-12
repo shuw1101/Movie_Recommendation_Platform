@@ -1,0 +1,71 @@
+<section class="home-main-content">
+  Discover movies you like
+</section>
+
+<div class="container" style="padding-top:30px; font-size:1.2rem;">
+  <form style="color:white; padding-top:10px;">
+    <label for="genre" style="margin-right:10px;">Select Genre:</label>
+    <select id="genre" name="genre" style="margin-right:10px;font-size: 1.1rem;">
+      <option value="action">Comedy</option>
+      <option value="comedy">Action</option>
+      <option value="drama">Drama</option>
+      <option value="romantic">Romance</option>
+    </select>
+    <label for="movie-title" style="margin-right:10px;font-size: 1.2rem;">Enter Movies You Like:</label>
+    <input type="text" id="movie-title" name="movie-title" style="margin-right:10px;">
+    <button type="submit"style="font-size: 1.1rem;background-color:rgba(145, 145, 145, .3);borderColor:rgba(227, 227, 227, .3);color:#ffffff;">Find Similar Movies</button>
+  </form>
+</div>
+
+<div class="container">
+
+  <!--Movies on theathers-->
+  <section class="movies__container">
+
+
+   
+   
+    <mat-tab-group (selectedTabChange)="tabChange($event)" [selectedIndex]="selectedMovieTab" mat-align-tabs="end">
+
+    <mat-tab *ngFor="let tab of movieTabList" [label]="tab">
+      <swiper
+        [config]="config"
+        style="display: flex; flex-direction: column-reverse;"
+      >
+        <ng-template swiperSlide *ngFor="let movie of moviesList | slice:0:15">
+          <app-poster-card [model]="movie" [isMovie]="true"></app-poster-card>
+        </ng-template>
+      </swiper>
+    </mat-tab>
+
+    </mat-tab-group>
+ 
+  </section>
+
+  <!--TV-->
+  <!-- <section class="shows__container">
+
+    <h2 class="shows__title" title="Go to TV Shows">
+      <a routerLink="/tv-shows" class="colored-background-before">
+        <mat-icon>tv_gen</mat-icon>
+        TV Shows
+      </a>
+    </h2>
+
+    <mat-tab-group (selectedTabChange)="tabTVChange($event)" [selectedIndex]="selectedTVTab" mat-align-tabs="end">
+
+      <mat-tab *ngFor="let tab of tvShowsTabList" [label]="tab">
+        <swiper
+          [config]="config"
+          style="display: flex; flex-direction: column-reverse;"
+        >
+          <ng-template swiperSlide *ngFor="let tvShow of tvShowsList | slice:0:15">
+            <app-poster-card [model]="tvShow"></app-poster-card>
+          </ng-template>
+        </swiper>
+      </mat-tab>
+
+    </mat-tab-group>
+  </section> -->
+
+</div>
