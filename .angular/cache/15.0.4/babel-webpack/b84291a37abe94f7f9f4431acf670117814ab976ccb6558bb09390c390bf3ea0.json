@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var Color = /*#__PURE__*/(() => {\n  (function (Color) {\n    Color[\"RED\"] = \"#f44336\";\n    Color[\"BLUE\"] = \"#2196f3\";\n    Color[\"GREEN\"] = \"#4caf50\";\n  })(Color || (Color = {}));\n  return Color;\n})();","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { Color } from '../enums/colors.enum';\nexport const themeColors = [{\n  color: Color.RED,\n  name: 'Red'\n}, {\n  color: Color.BLUE,\n  name: 'Blue'\n}, {\n  color: Color.GREEN,\n  name: 'Green'\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
