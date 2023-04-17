@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     }
   };
 
-  movieTabList = ['Sorted by Rates'];
+  movieTabList = ['Sorted by Ratings'];
   moviesList: Array<MovieModel> = [];
   selectedMovieTab = 0;
 
@@ -49,12 +49,6 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-
-    this.seo.generateTags({
-      title: 'Angular Movies and Series',
-      description: 'Movie and Series Home Page',
-      image: 'https://jancobh.github.io/Angular-Movies/background-main.jpg'
-    });
 
     this.getMovies('now_playing', 1);
     this.getTVShows('airing_today', 1);

@@ -7,7 +7,7 @@
   "start_url": "./",
   "short_name": "Angular Movies",
   "theme_color": "#f44336",
-  "description": "Angular Movies | TV Shows",
+  "description": "Movie Recommendation Platform",
   "orientation": "any",
   "background_color": "#f44336",
   "related_applications": [],

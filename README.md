@@ -8,11 +8,11 @@ A movie recommendation platform using **Hadoop**, **Spark**, and **Apache Mahout
 
 Find Movies You Like:
 
-![Alt text](https://github.com/shuw1101/Movie_Recommendation_Platform/blob/main/demo/findSimilarMovie.png)
+![Alt text](https://github.com/shuw1101/Movie_Recommendation_Platform/blob/main/demo/findSimilarMovies.png)
 
 Movie Library:
 
-![Alt text](https://github.com/shuw1101/Movie_Recommendation_Platform/blob/main/demo/movieLib.png)
+![Alt text](https://github.com/shuw1101/Movie_Recommendation_Platform/blob/main/demo/moviesLib.png)
 
 Movie Detail:
 
